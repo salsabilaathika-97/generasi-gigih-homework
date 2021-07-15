@@ -45,4 +45,11 @@ img {
   border-radius: 4px;
   padding: 5px;
   width: 150px;
+  margin-bottom: 50px;
+  margin-left: 360px;
+}
+
+input {
+  margin-left: 50px;
+  margin-right: 50px;
 }

@@ -1,13 +1,14 @@
 import './App.css';
+import data from './Data.js';
 
 function App() {
   return (
     <div className="App">
       <h1>Create Playlist</h1>
-        <img src = "https://i.scdn.co/image/ab67616d0000b2733611f1a3f4dceacc1ca54010"/>
-        <h3>Title</h3>
-        <h3>Artists</h3>
-        <h3>Albums</h3>
+        <img src = {data.album.images[0].url} alt = "Queen"/>
+        <h3 id = "title">{data.album.name}</h3>
+        <h3 id = "artist">{data.album.artists[0].name}</h3>
+        <h3 id = "album">{data.name}</h3>
         <button>Select</button>
     </div>
   );
