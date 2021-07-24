@@ -15,6 +15,7 @@ export default class App extends Component {
             <center>
                 <button onClick={this.handleClick} style={{fontSize:'20px'}}>Login</button>
             </center>
+            <Form />
         </div>
     }
 }
