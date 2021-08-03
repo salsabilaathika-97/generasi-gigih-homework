@@ -90,3 +90,19 @@ button {
   flex-direction: column;
   margin: 10px;
 } 
+
+.container-grid-list {
+  display: grid;
+  grid-template-columns: [first] 165px [line2] auto [line3];
+  column-gap: 10px;
+}
+
+.grid-list-img {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.grid-list-desc {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}

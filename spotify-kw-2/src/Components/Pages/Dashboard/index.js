@@ -17,14 +17,21 @@ const Dashboard = (props) => {
                 let tracks = result.data.tracks.items;
                 let listString = '';
                 tracks.map((element) => (
-                    listString += `<div class="list-playlist">
-                        <image src="${element.album.images[2].url}" />
-                        <div style="font-size: 16px; font-weight: bolder;">Title</div>
-                        <div style="font-size: 18px;">${element.name}</div>
-                        <div style="font-size: 16px; font-weight: bolder;">Album Name</div>
-                        <div style="font-size: 18px;">${element.album.name}</div>
-                        <div style="font-size: 16px; font-weight: bolder;">Artist Name</div>      
-                        <div style="font-size: 18px;">${element.artists[0].name}</div>      
+                    listString += `
+                    <div class="list-playlist">
+                        <div class = "container-grid-list">
+                            <div class = "grid-list-img">
+                                <image style ="width: 150px; height:150px;" src="${element.album.images[1].url}" />
+                            </div>
+                            <div class = "grid-list-desc">
+                                <div style="font-size: 16px; font-weight: bolder;">Title</div>
+                                <div style="font-size: 18px;">${element.name}</div>
+                                <div style="font-size: 16px; font-weight: bolder;">Album Name</div>
+                                <div style="font-size: 18px;">${element.album.name}</div>
+                                <div style="font-size: 16px; font-weight: bolder;">Artist Name</div>      
+                                <div style="font-size: 18px;">${element.artists[0].name}</div>      
+                            </div>
+                        </div>
                     </div>`
                 ));
                 document.getElementById("result-content").innerHTML = listString;
