@@ -1,5 +1,6 @@
 import React from 'react'
 import { Redirect } from 'react-router-dom';
+import { Button } from '@material-ui/core';
 
 
 const Home = (props) => {
@@ -22,7 +23,8 @@ const Home = (props) => {
                 (<div style={{width:'100%'}}>
                     <h1 style={{textAlign:'center'}}>Spotify Login</h1>
                     <center>
-                        <button onClick={handleClick} style={{fontSize:'20px'}}>Login</button>
+                        {/* <button onClick={handleClick} style={{fontSize:'20px'}}>Login</button> */}
+                        <Button variant="contained" color = "primary" onClick={handleClick}>Login</Button>
                     </center>
                 </div>)}
         </React.Fragment>
