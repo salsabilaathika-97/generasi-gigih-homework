@@ -3,7 +3,10 @@ import { Redirect } from 'react-router-dom';
 import {TextField, Button} from '@material-ui/core';
 import axios from 'axios';
 
-const Dashboard = (props) => {
+
+
+const Dashboard = (props: unknown) => {
+    //@ts-ignore: is declared but its value is never used
     const { isValidSession } = props;
     const clickSearch = async () => {
         let searchInput = document.getElementById("search-input").value;
@@ -17,7 +20,7 @@ const Dashboard = (props) => {
                 console.log(result);
                 let tracks = result.data.tracks.items;
                 let listString = '';
-                tracks.map((element) => (
+                tracks.map((element:unknown) => (
                     listString += `
                     <div class="list-playlist">
                         <div class = "container-grid-list">
@@ -42,7 +45,8 @@ const Dashboard = (props) => {
 
     return (
         <React.Fragment>
-            {isValidSession() ? (
+            //@ts-ignore: this expression is not callable
+            {isValidSession()  (
                 <div id="container" style={{width: '100%'}}>
                     <div id="search-wrapper" style={{width: '100%',display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
                         <div style={{fontSize: 37, fontWeight: 'bolder', marginTop: 15}}>Search Song</div>
