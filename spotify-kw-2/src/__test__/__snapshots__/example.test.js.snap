@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`examples of some things 1`] = `
+<div>
+  
+      
+  <label
+    for="album"
+  >
+    Album
+  </label>
+  
+      
+  <input
+    id="album"
+  />
+  
+      
+  <button>
+    Print Album
+  </button>
+  
+    
+  <div>
+    
+          
+    <div
+      data-testid="printed-album"
+    >
+      Bohemian Rhapsody
+    </div>
+    
+        
+  </div>
+</div>
+`;
